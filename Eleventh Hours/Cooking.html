@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+
+
+    <style>
+    
+        .search-container {
+          width: 100%;
+          max-width: 500px;
+          display: flex;
+          margin-top: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 25px;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        .search-container input {
+          flex: 1;
+          background-color: palegoldenrod;
+          border: none;
+          padding: 10px 15px;
+          font-size: 11px;
+          outline: none;
+        }
+    
+        .search-container button {
+          background: #007BFF;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background 0.3s;
+        }
+    
+        .search-container button:hover {
+          background: #0056b3;
+        }
+    
+        @media (max-width: 600px) {
+          .search-container {
+            max-width: 90%;
+          }
+    
+          .search-container button {
+            padding: 10px;
+          }
+          .btn-1-a{
+            max-width: 90%;
+          }
+        }
+      
+        .btn-1-a {
+          position: absolute;
+          top: 18px;
+          padding: 20px;
+          background: rgba(76, 175, 80, 0.3);
+        }
+        .nav-bar ul li {
+          display: inline-block;
+          padding: 10px;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+    
+        .nav-bar ul li:hover {
+          background-color: rgb(7, 7, 7);
+    
+          .refo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+          }
+        }
+    
+        /* Responsive Button */
+        .btn {
+          display: inline-block;
+          padding: 12px 25px;
+          font-size: 1rem;
+          color: #fff;
+          background-color: #007BFF;
+          /* Blue button color */
+          text-decoration: none;
+          border-radius: 5px;
+          margin-top: 10px;
+          transition: background-color 0.3s ease;
+        }
+    
+        /* Button hover effect */
+        .btn:hover {
+          background-color: #0056b3;
+        }
+    
+        /* ______________________________select languages________________ */
+    
+        .google-translate {
+          display: block;
+    
+        }
+    
+        .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+          display: none;
+        }
+    
+        .goog-te-combo {
+          border-radius: 5px;
+          padding: 8px;
+          border: none;
+          width: 200px;
+          background-color: rgb(4, 4, 4);
+          color: white;
+        }
+    
+        .nav-bar .goog-te-gadget {
+          font-size: 0px;
+        }
+    
+        .sline {
+          padding: 1px;
+          background-color: rgb(8, 8, 8);
+        }
+    
+        .search-container {
+              width: 100%;
+              max-width: 500px;
+              display: flex;
+              margin-top: 1rem;
+              border: 1px solid #ccc;
+              border-radius: 25px;
+              overflow: hidden;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        
+            .search-container input {
+              flex: 1;
+              background-color: palegoldenrod;
+              border: none;
+              padding: 10px 15px;
+              font-size: 11px;
+              outline: none;
+            }
+        
+            .search-container button {
+              background: #007BFF;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              cursor: pointer;
+              font-size: 16px;
+              transition: background 0.3s;
+            }
+        
+            .search-container button:hover {
+              background: #0056b3;
+            }
+        
+            @media (max-width: 600px) {
+              .search-container {
+                max-width: 90%;
+              }
+        
+              .search-container button {
+                padding: 10px;
+              }
+              .btn-1-a{
+                max-width: 90%;
+              }
+            }
+          
+            .btn-1-a {
+              position: absolute;
+              top: 18px;
+              padding: 20px;
+              background: rgba(76, 175, 80, 0.3);
+            }
+            .nav-bar ul li {
+              display: inline-block;
+              padding: 10px;
+              font-size: 20px;
+              text-transform: capitalize;
+            }
+        
+            .nav-bar ul li:hover {
+              background-color: rgb(7, 7, 7);
+        
+              .refo {
+                font-size: 30px;
+                font-weight: bold;
+                color: white;
+              }
+            }
+        
+            /* Responsive Button */
+            .btn {
+              display: inline-block;
+              padding: 12px 25px;
+              font-size: 1rem;
+              color: #fff;
+              background-color: #007BFF;
+              /* Blue button color */
+              text-decoration: none;
+              border-radius: 5px;
+              margin-top: 10px;
+              transition: background-color 0.3s ease;
+            }
+        
+            /* Button hover effect */
+            .btn:hover {
+              background-color: #0056b3;
+            }
+        
+            /* ______________________________select languages________________ */
+        
+            .google-translate {
+              display: block;
+        
+            }
+        
+            .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+              display: none;
+            }
+        
+            .goog-te-combo {
+              border-radius: 5px;
+              padding: 8px;
+              border: none;
+              width: 200px;
+              background-color: rgb(4, 4, 4);
+              color: white;
+            }
+        
+            .nav-bar .goog-te-gadget {
+              font-size: 0px;
+            }
+        
+            .sline {
+              padding: 1px;
+              background-color: rgb(8, 8, 8);
+            }
+        
+      </style>
+ 
+
+    <!-- MARQUEE  -->
+    <div class="header-a">
+        <marquee direction="left">
+          <h1>And this gospel of the kingdom shall be preached in all the world for a witness unto all
+            nations; and
+            then
+            shall
+            the end come.(Matthew 24:14) And I saw another
+            angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell
+            on the
+            earth,
+            and
+            to every nation,
+            and kindred, and tongue, and people,(Revelations 14:6) For thus saith the LORD of hosts; After
+            the glory
+            hath he
+            sent me unto the nations which spoiled you: for he that toucheth you toucheth the apple of his
+            eye.(Zechariah 2:8)
+          </h1>
+  
+        </marquee>
+      </div>
+      <nav class="navbar">
+        <div class="logo">Reformation</div>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#"><i class="fa  fa-home"></i> Home</a></li>
+          <li><a href="#"></i> About Us <i class="fa fa-caret-down"></i></a>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="Refomers.html">Refomers</a></li>
+                  <li><a href="Disaffect.html">Disaffect</a></li>
+                  <li><a href="Library.html">Library</a></li>
+                </ul>
+              </div>
+            </li>
+          <li><a href="#"></i> Prophecy <i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="Daniel.html">Daniel</a></li>
+                <li><a href="Revelations.html">Revelations</a></li>
+                <li><a href="Sign Of God.html">Sign Of God</a></li>
+                <li><a href="Sign Of Beast.html">Sign Of Beast</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"></i>Debate <i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="SDAChurch.html">SDA Church</a></li>
+                <li><a href="Muslim.html">Muslim</a></li>
+                <li><a href="Protestants.html">Protestants</a></li>
+                <li><a href="Catholic.html">Catholic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"></i>Preaches <i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="VIdeo.html">VIdeo & Comment</a></li>
+                <li><a href="Muslim.html">Image & Comment</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Education <i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="Children.html">Children</a></li>
+                <li><a href="Adults.html">Adults</a></li>
+                <li><a href="Camp Meeting.html">Camp Meeting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Tamperance <i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="Herbal medecine.html">Herbal Medicine</a></li>
+                <li><a href="Fluit's Medecine.html">Fruit's Medicine</a></li>
+                <li><a href="Avoid This.html">Avoid This</a></li>
+                <li><a href="Cooking.html">Cooking</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Contact<i class="fa fa-caret-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="african.html">African</a></li>
+                <li><a href="North America.html">North America</a></li>
+                <li><a href="South America.html">South America</a></li>
+                <li><a href="Europe.html">Europe</a></li>
+                <li><a href="Asia.html">Asia</a></li>
+                <li><a href="Australia.html">Australia</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- SEARCH BAR & GOOGLE TRANSLATE  -->
+        <button class="btn-1-a">
+  
+  
+  
+          <!-- Google Translate -->
+          <div id="google_translate_element"></div>
+  
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+          </script>
+  
+          <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </button>
+  
+      </nav>
+  
+      <!-- SEARCH BAR  -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Enter a word...">
+        <button onclick="searchWord()">Search</button>
+      </div>
+      <div id="result" style="margin-top: 20px; font-size: 18px; text-align: center;"></div>
+  
+      <script>
+        // Example word list to search
+        const wordList = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"];
+  
+        function searchWord() {
+          const query = document.getElementById('searchInput').value.trim().toLowerCase();
+          const resultDiv = document.getElementById('result');
+  
+          if (!query) {
+            resultDiv.textContent = "Please enter a word.";
+            return;
+          }
+  
+          if (wordList.includes(query)) {
+            resultDiv.textContent = `The word "${query}" was found in the list!`;
+          } else {
+            resultDiv.textContent = `The word "${query}" is not in the list.`;
+          }
+        }
+      </script>
+  
+      <script>
+        function saveSearch() {
+          const searchInput = document.getElementById('search-query').value;
+  
+          if (searchInput.trim()) {
+            // Save the search query in local storage
+            localStorage.setItem('lastSearch', searchInput);
+            alert(`Search query saved: ${searchInput}`);
+          } else {
+            alert('Please enter a search query before saving.');
+          }
+        }
+      </script>
+  
+      <!-- straight line  -->
+      <div class="sline"></div>
+  
+  
+    
+      
+
+
+<h1>Public Photo Gallery</h1>
+
+<div>
+    <input type="file" id="fileInput">
+    <input type="text" id="photoDescription" placeholder="Enter photo description">
+    <button onclick="requestUploadPermission()">Request Upload Permission</button>
+</div>
+<div id="gallery">
+    <!-- Photos will be displayed here -->
+</div>
+
+<script>
+    const isAdmin = true; // Set to true for admin users
+
+    // Function to handle permission request for uploading photos
+    function requestUploadPermission() {
+        if (confirm("Request permission from the admin to upload this photo?")) {
+            alert("Permission granted. Proceeding with upload.");
+            uploadPhoto();
+        } else {
+            alert("Upload canceled. Permission is required to upload photos.");
+        }
+    }
+
+    // Function to handle file upload and display the photo
+    function uploadPhoto() {
+        var fileInput = document.getElementById("fileInput");
+        var file = fileInput.files[0];
+        var description = document.getElementById("photoDescription").value;
+
+        // Check if a file is selected
+        if (!file) {
+            alert("Please select a photo to upload.");
+            return;
+        }
+
+        if (!description) {
+            alert("Please provide a description for the photo.");
+            return;
+        }
+
+        // Get the current date and time
+        var currentDate = new Date();
+        var postDate = currentDate.toLocaleDateString();
+        var postTime = currentDate.toLocaleTimeString();
+
+        // Create a new FileReader to read the file
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var photoUrl = event.target.result;
+            addPhoto(photoUrl, description, postDate, postTime); // Pass the date and time as well
+        };
+        reader.readAsDataURL(file);
+
+        // Reset the file input and description input
+        fileInput.value = "";
+        document.getElementById("photoDescription").value = "";
+    }
+
+    // Function to add the photo to the gallery
+    function addPhoto(photoUrl, description, postDate, postTime) {
+        var galleryDiv = document.getElementById("gallery");
+        var photoElement = document.createElement("div");
+        photoElement.className = "photo";
+        photoElement.innerHTML = `<img src="${photoUrl}" alt="Uploaded Photo" width="100%">
+            <p><strong>Description:</strong> ${description}</p>
+            <p><strong>Posted on:</strong> ${postDate} at ${postTime}</p> <!-- Display the post date and time -->
+            ${isAdmin ? '<button class="admin-button" onclick="deleteElement(this.parentElement)">Delete Photo</button>' : ''}
+            <div class="comment-section">
+                <h3>Comments:</h3>
+                <div class="comments"></div>
+                <input type="text" placeholder="Your name" class="comment-name">
+                <input type="email" placeholder="Your email" class="comment-email">
+                <input type="text" placeholder="Your country" class="comment-country">
+                <input type="tel" placeholder="Your contact number" class="comment-contact">
+                <input type="text" placeholder="Enter your comment" class="comment-text">
+                <button onclick="postComment(this)">Post Comment</button>
+            </div>`;
+        galleryDiv.appendChild(photoElement);
+    }
+
+    // Function to post a comment on a photo
+    function postComment(commentBtn) {
+        var commentSection = commentBtn.parentElement;
+        var name = commentSection.querySelector(".comment-name").value;
+        var email = commentSection.querySelector(".comment-email").value;
+        var country = commentSection.querySelector(".comment-country").value;
+        var contact = commentSection.querySelector(".comment-contact").value;
+        var commentText = commentSection.querySelector(".comment-text").value;
+
+        if (!name || !email || !country || !contact || !commentText) {
+            alert("Please provide your name, email, country, contact number, and comment.");
+            return;
+        }
+
+        if (!validateComment(commentText)) {
+            alert("Comment contains inappropriate content and will not be posted.");
+            return;
+        }
+
+        var commentsDiv = commentSection.querySelector(".comments");
+        var commentElement = document.createElement("div");
+        commentElement.className = "comment";
+        commentElement.innerHTML = `<strong>${name} (<a href="mailto:${email}">${email}</a>) from ${country} (Contact: ${contact}):</strong> ${commentText} 
+            <button onclick="replyToComment(this, '${name}', '${email}')">Reply</button>
+            ${isAdmin ? '<button class="admin-button" onclick="deleteElement(this.parentElement)">Delete Comment</button>' : ''}
+            <div class="replies"></div>`;
+        commentsDiv.appendChild(commentElement);
+
+        // Clear the comment inputs after posting
+        commentSection.querySelector(".comment-name").value = "";
+        commentSection.querySelector(".comment-email").value = "";
+        commentSection.querySelector(".comment-country").value = "";
+        commentSection.querySelector(".comment-contact").value = "";
+        commentSection.querySelector(".comment-text").value = "";
+    }
+
+    // Function to validate a comment
+    function validateComment(commentText) {
+        const inappropriateWords = ["badword1", "badword2", "badword3"]; // Replace with actual words
+        return !inappropriateWords.some(word => commentText.toLowerCase().includes(word));
+    }
+
+    // Function to reply to a comment
+    function replyToComment(replyBtn, commenterName, commenterEmail) {
+        var repliesDiv = replyBtn.nextElementSibling;
+        var replyText = prompt("Enter your reply:");
+
+        if (!replyText) {
+            alert("Reply cannot be empty.");
+            return;
+        }
+
+        if (!validateComment(replyText)) {
+            alert("Reply contains inappropriate content and will not be posted.");
+            return;
+        }
+
+        var replyElement = document.createElement("div");
+        replyElement.className = "reply";
+        replyElement.innerHTML = `<strong>Reply to ${commenterName} (<a href="mailto:${commenterEmail}">${commenterEmail}</a>):</strong> ${replyText}`;
+        repliesDiv.appendChild(replyElement);
+    }
+
+    // Function to delete an element (photo, comment, or reply)
+    function deleteElement(element) {
+        if (confirm("Are you sure you want to delete this item?")) {
+            element.remove();
+        }
+    }
+</script>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

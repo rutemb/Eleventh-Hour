@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <style>
+    .search-container {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-container input {
+      flex: 1;
+      background-color: palegoldenrod;
+      border: none;
+      padding: 10px 15px;
+      font-size: 11px;
+      outline: none;
+    }
+
+    .search-container button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .search-container button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .search-container {
+        max-width: 90%;
+      }
+
+      .search-container button {
+        padding: 10px;
+      }
+
+      .btn-1-a {
+        max-width: 90%;
+      }
+    }
+
+    .btn-1-a {
+      position: absolute;
+      top: 18px;
+      padding: 20px;
+      background: rgba(76, 175, 80, 0.3);
+    }
+
+    .nav-bar ul li {
+      display: inline-block;
+      padding: 10px;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    .nav-bar ul li:hover {
+      background-color: rgb(7, 7, 7);
+
+      .refo {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    /* Responsive Button */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007BFF;
+      /* Blue button color */
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* ______________________________select languages________________ */
+
+    .google-translate {
+      display: block;
+
+    }
+
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+      display: none;
+    }
+
+    .goog-te-combo {
+      border-radius: 5px;
+      padding: 8px;
+      border: none;
+      width: 200px;
+      background-color: rgb(4, 4, 4);
+      color: white;
+    }
+
+    .nav-bar .goog-te-gadget {
+      font-size: 0px;
+    }
+
+    .sline {
+      padding: 1px;
+      background-color: rgb(8, 8, 8);
+    }
+
+    .search-container {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-container input {
+      flex: 1;
+      background-color: palegoldenrod;
+      border: none;
+      padding: 10px 15px;
+      font-size: 11px;
+      outline: none;
+    }
+
+    .search-container button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .search-container button:hover {
+      background: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .search-container {
+        max-width: 90%;
+      }
+
+      .search-container button {
+        padding: 10px;
+      }
+
+      .btn-1-a {
+        max-width: 90%;
+      }
+    }
+
+    .btn-1-a {
+      position: absolute;
+      top: 18px;
+      padding: 20px;
+      background: rgba(76, 175, 80, 0.3);
+    }
+
+    .nav-bar ul li {
+      display: inline-block;
+      padding: 10px;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    .nav-bar ul li:hover {
+      background-color: rgb(7, 7, 7);
+
+      .refo {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    /* Responsive Button */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007BFF;
+      /* Blue button color */
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* ______________________________select languages________________ */
+
+    .google-translate {
+      display: block;
+
+    }
+
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+      display: none;
+    }
+
+    .goog-te-combo {
+      border-radius: 5px;
+      padding: 8px;
+      border: none;
+      width: 200px;
+      background-color: rgb(4, 4, 4);
+      color: white;
+    }
+
+    .nav-bar .goog-te-gadget {
+      font-size: 0px;
+    }
+
+    .sline {
+      padding: 1px;
+      background-color: rgb(8, 8, 8);
+    }
+
+    .ethiopia {
+      color: red;
+      columns: 2;
+    }
+    .btn-eleven{
+      background-color: bisque;
+    }
+  </style>
+
+
+  <!-- MARQUEE  -->
+  <div class="header-a">
+    <marquee direction="left">
+      <h1>And this gospel of the kingdom shall be preached in all the world for a witness unto all
+        nations; and
+        then
+        shall
+        the end come.(Matthew 24:14) And I saw another
+        angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell
+        on the
+        earth,
+        and
+        to every nation,
+        and kindred, and tongue, and people,(Revelations 14:6) For thus saith the LORD of hosts; After
+        the glory
+        hath he
+        sent me unto the nations which spoiled you: for he that toucheth you toucheth the apple of his
+        eye.(Zechariah 2:8)
+      </h1>
+
+    </marquee>
+  </div>
+  <nav class="navbar">
+    <div class="logo">Eleventh Hour</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#"><i class="fa  fa-home"></i> Home</a></li>
+      <li><a href="#"></i> About Us <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Refomers.html">Refomers</a></li>
+            <li><a href="Disaffect.html">Disaffect</a></li>
+            <li><a href="Library.html">Library</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i> Prophecy <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Daniel.html">Daniel</a></li>
+            <li><a href="Revelations.html">Revelations</a></li>
+            <li><a href="Sign Of God.html">Sign Of God</a></li>
+            <li><a href="Sign Of Beast.html">Sign Of Beast</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i>Debate <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="SDAChurch.html">SDA Church</a></li>
+            <li><a href="Muslim.html">Muslim</a></li>
+            <li><a href="Protestants.html">Protestants</a></li>
+            <li><a href="Catholic.html">Catholic</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i>Preaches <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="VIdeo.html">VIdeo & Comment</a></li>
+            <li><a href="Muslim.html">Image & Comment</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Education <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Children.html">Children</a></li>
+            <li><a href="Adults.html">Adults</a></li>
+            <li><a href="Camp Meeting.html">Camp Meeting</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Tamperance <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Herbal medecine.html">Herbal Medicine</a></li>
+            <li><a href="Fluit's Medecine.html">Fruit's Medicine</a></li>
+            <li><a href="Avoid This.html">Avoid This</a></li>
+            <li><a href="Cooking.html">Cooking</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Contact<i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="african.html">African</a></li>
+            <li><a href="North America.html">North America</a></li>
+            <li><a href="South America.html">South America</a></li>
+            <li><a href="Europe.html">Europe</a></li>
+            <li><a href="Asia.html">Asia</a></li>
+            <li><a href="Australia.html">Australia</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <!-- SEARCH BAR & GOOGLE TRANSLATE  -->
+    <button class="btn-1-a">
+
+
+
+      <!-- Google Translate -->
+      <div id="google_translate_element"></div>
+
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
+
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </button>
+
+  </nav>
+
+  <!-- SEARCH BAR  -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Enter a word...">
+    <button onclick="searchWord()">Search</button>
+  </div>
+  <div id="result" style="margin-top: 20px; font-size: 18px; text-align: center;"></div>
+
+  <script>
+    // Example word list to search
+    const wordList = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"];
+
+    function searchWord() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      const resultDiv = document.getElementById('result');
+
+      if (!query) {
+        resultDiv.textContent = "Please enter a word.";
+        return;
+      }
+
+      if (wordList.includes(query)) {
+        resultDiv.textContent = `The word "${query}" was found in the list!`;
+      } else {
+        resultDiv.textContent = `The word "${query}" is not in the list.`;
+      }
+    }
+  </script>
+
+  <script>
+    function saveSearch() {
+      const searchInput = document.getElementById('search-query').value;
+
+      if (searchInput.trim()) {
+        // Save the search query in local storage
+        localStorage.setItem('lastSearch', searchInput);
+        alert(`Search query saved: ${searchInput}`);
+      } else {
+        alert('Please enter a search query before saving.');
+      }
+    }
+  </script>
+
+  <div class="ethiopia">
+    <h1><u>The Fulfill of Prophecy</u></h1>
+    <p>It's written: "From beyond te revers of Ethiopia my suppriants, even the daughter of my dispersed, shall bring
+      mine offerings"-Zephaniah 3:10 <br><br>WOE to the land shadowingwith wings, which is beyond the rivers of Ethiapia:
+      that sends ambassadors by the sea, even in vessels of bulrushes upon the waters, saying, Go, ye swift messangers,
+      to a nation scattered and peeled, to a people terrible from their begininng hitherto, a nation meted out and
+      trodden down, whose land the rivers have spoiled! all you inahabitants of the word, and dwellers on the earth,
+      see, when he lifts up the an insign on the mountains , and when he blowth a trumpet, hear ye." -Isaiah 18;1-4</p>
+  </div>
+  <!-- straight line  -->
+  <div class="sline"></div>
+
+  <div class="btn-eleven">
+    <h1>The eleventh Hour</h1>
+    <p>FOR the kingdon of heaven is like unto a man that is an householder which went out early in the morning to hire
+      laboures into his vineyard. And when he had agree with the laboures for a penny a day, he sent them into his
+      vineyard. and he went out the third hour. and saw others standards idle in the marketplace, and said unto them; Go
+      ye also into the vineyard, and whatseover is right i will give you. and they went their way. Again he went out the
+      six and nineth hour, and did likewise. And he wen aout the eleventh hour he went out, and found athers standing idke, and
+      saith unto them , why stand idle ye here all day idle? they say unto him, because no man hath hired us. He saith
+      unto them, Go ye also into the vineyard; and whatseoveris right, that shall you receive." -Matthew 20:1-6</p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

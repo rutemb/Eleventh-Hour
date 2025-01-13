@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .btn-1-a {
+    position: absolute;
+    top: 18px;
+    padding: 20px;
+    background: rgba(76, 175, 80, 0.3);
+    /* background: url(); */
+    /* background-color: rgb(112, 181, 216); */
+    /* opacity: 0.7; */
+  }
+
+  .btn-1-a .search-box {
+    margin: 1cqmin;
+  }
+
+  /* General Styling for Search Box */
+  .search-container {
+    display: flex;
+    align-items: left;
+    background-color: #e8bdbd;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(8, 8, 8, 0.1);
+    padding: 5px 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .search-container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Input Styling */
+  .search-input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    flex-grow: 1;
+    color: #333;
+  }
+
+  .search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  /* Button Styling */
+  .search-btn {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .search-btn:hover {
+    background-color: #e68a00;
+    transform: scale(1.1);
+  }
+
+  /* Search Icon */
+  .search-btn i {
+    font-size: 18px;
+  }
+
+  .nav-bar ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .nav-bar ul li:hover {
+    background-color: rgb(7, 7, 7);
+
+    .refo {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  /* Responsive Button */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    /* Blue button color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Button hover effect */
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* ______________________________select languages________________ */
+
+  .google-translate {
+    display: block;
+
+  }
+
+  .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+  }
+
+  .goog-te-combo {
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    width: 200px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+  }
+
+  .nav-bar .goog-te-gadget {
+    font-size: 0px;
+  }
+
+  .sline {
+    padding: 1px;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .under-line {
+    color: red; 
+  }
+  .p-diseases{
+    font-size: 1rem;
+    color: #e68a00;
+  }
+</style>
+
+<body>
+
+
+  <!-- MARQUEE  -->
+  <div class="header-a">
+    <marquee direction="left">
+      <h1>And this gospel of the kingdom shall be preached in all the world for a witness unto all
+        nations; and
+        then
+        shall
+        the end come.(Matthew 24:14) And I saw another
+        angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell
+        on the
+        earth,
+        and
+        to every nation,
+        and kindred, and tongue, and people,(Revelations 14:6) For thus saith the LORD of hosts; After
+        the glory
+        hath he
+        sent me unto the nations which spoiled you: for he that toucheth you toucheth the apple of his
+        eye.(Zechariah 2:8)
+      </h1>
+
+    </marquee>
+  </div>
+  <nav class="navbar">
+    <div class="logo">Reformation</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="Home"><i class="fa  fa-home"></i> Home</a></li>
+      <li><a href="#"></i> About Us <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Refomers.html"></a>Refomers</li>
+            <li><a href="Disaffect.html"></a>Disaffect</li>
+            <li><a href="Library.html"></a>Library</li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i> Prophecy <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Daniel.html">Daniel</a></li>
+            <li><a href="Revelations.html">Revelations</a></li>
+            <li><a href="Sign Of God.html">Sign Of God</a></li>
+            <li><a href="Sign Of Beast.html">Sign Of Beast</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i> Debate <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Reformers.html">SDA Church</a></li>
+            <li><a href="Muslim.html">Muslim</a></li>
+            <li><a href="Protestants.html">Protestants</a></li>
+            <li><a href="Catholic.html">Catholic</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Education <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Children.html">Children</a></li>
+            <li><a href="Adults.html">Adults</a></li>
+            <li><a href="Camp Meeting.html">Camp Meeting</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Tamperance <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Herbal medecine.html">Herbal Medicine</a></li>
+            <li><a href="Fluit's Medecine.html">Fruit's Medicine</a></li>
+            <li><a href="Avoid This.html">Avoid This</a></li>
+            <li><a href="Cooking.html">Cooking</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"></i> Contact <i class="fa fa-caret-down"></i></a>
+        <div class="sub-menu">
+          <ul>
+            <li><a href="Africa.com">Africa</a></li>
+            <li><a href="North America.html">North America</a></li>
+            <li><a href="South America.html">South America</a></li>
+            <li><a href="Europe.html">Europe</a></li>
+            <li><a href="Asia.html">Asia</a></li>
+            <li><a href="Australia.html">Australia</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <!-- SEARCH BAR & GOOGLE TRANSLATE  -->
+    <button class="btn-1-a">
+
+
+
+      <!-- Google Translate -->
+      <div id="google_translate_element"></div>
+
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
+
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </button>
+
+  </nav>
+  <div class="search-container">
+    <input type="text" placeholder="Search here..." class="search-input" id="search-query" />
+    <button class="search-btn" onclick="saveSearch()">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+
+  <script>
+    function saveSearch() {
+      const searchInput = document.getElementById('search-query').value;
+
+      if (searchInput.trim()) {
+        // Save the search query in local storage
+        localStorage.setItem('lastSearch', searchInput);
+        alert(`Search query saved: ${searchInput}`);
+      } else {
+        alert('Please enter a search query before saving.');
+      }
+    }
+  </script>
+
+  <div>
+    <h1><u class="under-line">Diseases and their medicines</u> </h1>
+    <p class="p-diseases">It is written: "They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they
+      shall lay hands on the sick, and they shall recover." -Mark 16:18</p>
+  </div>
+
+  <!-- straight line  -->
+  <div class="sline"></div>
+
+
+
+  <!-- MEDICAL TEPARTMENT  -->
+  <style>
+    .extra-content p {
+      background-color: navajowhite;
+      text-align: left;
+    }
+
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 20px;
+    }
+
+    /* Container for Cards */
+    .container {
+      background-color: #0816e1;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      width: calc(33.33% - 15px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-image {
+      width: 100%;
+      max-height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .extra-content {
+      display: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .comment-section {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+      margin-top: 20px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .comment {
+      background-color: #f5f5f5;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    .comment-actions {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #007BFF;
+      cursor: pointer;
+      display: flex;
+      gap: 10px;
+    }
+
+    .comment-actions span:hover {
+      text-decoration: underline;
+    }
+
+    .comment-actions span.emoji {
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+
+    .comment-actions .delete {
+      color: red;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Emoji Styles */
+    .comment-actions span.emoji {
+      font-size: 1.5em;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 992px) {
+      .card {
+        width: calc(50% - 15px);
+        /* Two cards per row on medium screens */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        width: 100%;
+        /* Single card per row on small screens */
+      }
+    }
+
+    /* Existing styles */
+
+    /* To add a scrollbar to the comments section without expanding the card height, 
+    you can set a fixed height and apply the overflow-y: a
+    uto property to enable scrolling when the content exceeds the specified height. */
+    .comment-section {
+      color: #0e0d0d;
+      margin-top: 20px;
+      width: 100%;
+      max-height: 200px;
+      /* Set a fixed height for the comment section */
+      overflow-y: auto;
+      /* Enable vertical scrolling */
+      border: 1px solid #ccc;
+      /* Optional: Add a border to highlight the scrollable area */
+      padding: 5px;
+      /* Add padding for better readability */
+      border-radius: 5px;
+      background-color: #d1c7c7;
+      /* Optional: Different background for comment section */
+    }
+
+    /* Existing styles */
+
+    /* To prevent the card from expanding when the "Read More" 
+    content is displayed, you can add a fixed height with a vertical scrollbar to the 
+    .extra-content section. Here's how you can update the CSS: */
+    .extra-content {
+      display: none;
+      margin-top: 10px;
+      text-align: center;
+      max-height: 100px;
+      /* Set a fixed height for the extra content */
+      overflow-y: auto;
+      /* Enable vertical scrolling if content exceeds the height */
+      padding: 5px;
+      /* Optional: Add padding for better readability */
+      border: 1px solid #ddd;
+      /* Optional: Add a border for clarity */
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      /* Optional: Background for better readability */
+    }
+
+    .notification-area {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 300px;
+      z-index: 1000;
+    }
+
+    .notification {
+      background-color: #f15d5d;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.5s;
+    }
+
+    .notification h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    .notification p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .notification .close-btn {
+      background: none;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #888;
+      float: right;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <div>
+    <div class="container">
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./IMAGES/Poison.jpg" alt="Image 1" class="card-image">
+        <h2>Poison</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent1">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent1', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments1"></ul>
+          <textarea id="commentInput1" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments1', 'commentInput1')">Submit</button>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="./IMAGES/umutima.jpg" alt="Image 2" class="card-image">
+        <h2>Umuntima</h2>
+        <p>Ymptoms and Medecines</p>
+        <div class="extra-content" id="extraContent2">
+          <p>Here are 100 additional words for Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent2', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments2"></ul>
+          <textarea id="commentInput2" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments2', 'commentInput2')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="./IMAGES/bladder.jpeg" alt="Image 3" class="card-image">
+        <h2>Bladder</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent3">
+          <p>Here are 100 additional words for Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent3', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments3"></ul>
+          <textarea id="commentInput3" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments3', 'commentInput3')">Submit</button>
+        </div>
+      </div>
+
+
+
+
+      <!-- SECOND ROW  -->
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="./IMAGES/body disease.jpeg" alt="Image 1" class="card-image">
+        <h2>body Deseas</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent4">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent4', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments4"></ul>
+          <textarea id="commentInput4" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments4', 'commentInput4')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="./IMAGES/Diabetes-768x424.jpg" alt="Image 1" class="card-image">
+        <h2>Diabetes</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent5">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent5', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments5"></ul>
+          <textarea id="commentInput5" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments5', 'commentInput5')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <img src="./IMAGES/Abraham.jpg" alt="Image 3" class="card-image">
+        <h2>Abrahamu</h2>
+        <p>Brief description of Card 3.</p>
+        <div class="extra-content" id="extraContent6">
+          <p>Here are 100 additional words for Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent6', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments6"></ul>
+          <textarea id="commentInput6" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments6', 'commentInput6')">Submit</button>
+        </div>
+      </div>
+
+
+
+      <!-- THE THIRD ROW  -->
+      <!-- Card 9 -->
+      <div class="card">
+        <img src="./IMAGES/Poison.jpg" alt="Image 7" class="card-image">
+        <h2>Poison</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent7">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent7', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments7"></ul>
+          <textarea id="commentInput7" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments7', 'commentInput7')">Submit</button>
+        </div>
+      </div>
+      <!-- Card 10 -->
+      <div class="card">
+        <img src="./IMAGES/umutima.jpg" alt="Image 8" class="card-image">
+        <h2>Umuntima</h2>
+        <p>Ymptoms and Medecines</p>
+        <div class="extra-content" id="extraContent8">
+          <p>Here are 100 additional words for Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent8', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments8"></ul>
+          <textarea id="commentInput8" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments8', 'commentInput8')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="card">
+        <img src="./IMAGES/umutima.jpg" alt="Image 8" class="card-image">
+        <h2>Umuntima</h2>
+        <p>Ymptoms and Medecines</p>
+        <div class="extra-content" id="extraContent9">
+          <p>Here are 100 additional words for Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent9', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments9"></ul>
+          <textarea id="commentInput9" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments9', 'commentInput9')">Submit</button>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Card 12 -->
+      <div class="card">
+        <img src="./IMAGES/body disease.jpeg" alt="Image 1" class="card-image">
+        <h2>body Deseas</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent10">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent10', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments10"></ul>
+          <textarea id="commentInput10" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments10', 'commentInput10')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="card">
+        <img src="./IMAGES/Diabetes-768x424.jpg" alt="Image 1" class="card-image">
+        <h2>Diabetes</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent11">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent11', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments11"></ul>
+          <textarea id="commentInput11" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments11', 'commentInput11')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="card">
+        <img src="./IMAGES/Abraham.jpg" alt="Image 3" class="card-image">
+        <h2>Abrahamu</h2>
+        <p>Brief description of Card 3.</p>
+        <div class="extra-content" id="extraContent12">
+          <p>Here are 100 additional words for Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent12', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments12"></ul>
+          <textarea id="commentInput12" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments12', 'commentInput12')">Submit</button>
+        </div>
+      </div>
+
+
+
+      <!-- THE FORTH  -->
+      <!-- Card 14 -->
+      <div class="card">
+        <img src="./IMAGES/body disease.jpeg" alt="Image 1" class="card-image">
+        <h2>body Deseas</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent13">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent13', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments13"></ul>
+          <textarea id="commentInput13" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments13', 'commentInput13')">Submit</button>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="card">
+        <img src="./IMAGES/Diabetes-768x424.jpg" alt="Image 1" class="card-image">
+        <h2>Diabetes</h2>
+        <p>Symptoms and Medecine</p>
+        <div class="extra-content" id="extraContent14">
+          <p>Here are 100 additional words for Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent14', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments14"></ul>
+          <textarea id="commentInput14" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments14', 'commentInput14')">Submit</button>
+        </div>
+      </div>
+
+
+
+      <!-- Card 16 -->
+      <div class="card">
+        <img src="./IMAGES/Abraham.jpg" alt="Image 3" class="card-image">
+        <h2>Abrahamu</h2>
+        <p>Brief description of Card 3.</p>
+        <div class="extra-content" id="extraContent15">
+          <p>Here are 100 additional words for Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button onclick="toggleReadMore('extraContent15', this)">Read More</button>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3>Comments</h3>
+          <ul id="comments15"></ul>
+          <textarea id="commentInput15" placeholder="Write a comment..."></textarea>
+          <button onclick="addComment('comments15', 'commentInput15')">Submit</button>
+        </div>
+      </div>
+
+
+
+
+      <!-- Notification Area -->
+      <div id="notification-area" class="notification-area">
+        <!-- Notifications will be dynamically added here -->
+      </div>
+
+      <!-- Styles for the Notification Area -->
+
+
+
+
+      <script>
+        let notificationCount = 0; // Global counter for notifications
+
+        function addNotification(title, message, location) {
+          const notificationArea = document.getElementById("notification-area");
+          notificationCount++; // Increment notification count
+
+          const notification = document.createElement("div");
+          notification.className = "notification";
+
+          notification.innerHTML = `
+      <button class="close-btn" onclick="this.parentElement.remove()">×</button>
+      <h4>${title} (#${notificationCount})</h4>
+      <p>${message} - Location: ${location}</p>
+    `;
+
+          notificationArea.appendChild(notification);
+
+          // Auto-remove notification after 5 seconds
+          setTimeout(() => {
+            if (notification.parentElement) {
+              notification.remove();
+              notificationCount--; // Decrement notification count when removed
+            }
+          }, 5000);
+        }
+
+        function addComment(commentListId, inputId) {
+          const commentList = document.getElementById(commentListId);
+          const input = document.getElementById(inputId);
+
+          if (input.value.trim() === "") {
+            alert("Please write a comment before submitting.");
+            return;
+          }
+
+          const commentItem = document.createElement("li");
+          commentItem.className = "comment";
+
+          // Generate a unique ID for the comment
+          const commentId = Math.random().toString(36).substring(2, 15);
+
+          commentItem.innerHTML = `
+        <p>${input.value}</p>
+        <div class="comment-actions">
+            <span onclick="replyComment(this)">💬 Reply</span>
+            <span class="emoji" onclick="addEmoji(this, '😊')">😊</span>
+            <span class="emoji" onclick="addEmoji(this, '❤️')">❤️</span>
+            <span class="emoji" onclick="addEmoji(this, '👍')">👍</span>
+            <span class="emoji" onclick="addEmoji(this, '😂')">😂</span>
+            <span class="delete" onclick="deleteComment('${commentId}', this)">Delete</span>
+        </div>
+        <ul class="replies"></ul>
+    `;
+          commentItem.id = commentId;
+          commentList.appendChild(commentItem);
+          input.value = "";
+
+          // Trigger a notification for the new comment
+          addNotification("New Comment", `A new comment was added to list ${commentListId}.`, commentListId);
+        }
+
+        function replyComment(element) {
+          const replyForm = document.createElement("div");
+          replyForm.className = "reply-form";
+
+          replyForm.innerHTML = `
+        <input type="text" placeholder="Your Reply..." class="reply-text" required>
+        <button onclick="submitReply(this)">Submit Reply</button>
+    `;
+
+          element.parentElement.parentElement.appendChild(replyForm);
+        }
+
+        function submitReply(button) {
+          const replyForm = button.parentElement;
+          const replyText = replyForm.querySelector(".reply-text").value;
+
+          if (!replyText.trim()) {
+            alert("Reply cannot be empty!");
+            return;
+          }
+
+          const replyItem = document.createElement("li");
+          replyItem.className = "comment";
+          replyItem.innerHTML = `<p>${replyText}</p>`;
+
+          replyForm.previousElementSibling.appendChild(replyItem);
+          replyForm.remove();
+        }
+
+        function addEmoji(element, emoji) {
+          const parentComment = element.parentElement.previousElementSibling;
+          parentComment.textContent += ` ${emoji}`;
+        }
+
+        function deleteComment(commentId, element) {
+          const comment = document.getElementById(commentId);
+          if (confirm("Are you sure you want to delete this comment?")) {
+            comment.remove();
+          }
+        }
+      </script>
+
+      <script>
+        function toggleReadMore(id, button) {
+          var extraContent = document.getElementById(id);
+          if (extraContent.style.display === "none" || extraContent.style.display === "") {
+            extraContent.style.display = "block";
+            button.innerHTML = "Read Less";
+          } else {
+            extraContent.style.display = "none";
+            button.innerHTML = "Read More";
+          }
+        }
+      </script>
+      <script src="script.js"></script>
+</body>
+
+</html>

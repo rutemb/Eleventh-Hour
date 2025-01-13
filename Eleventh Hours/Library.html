@@ -1,0 +1,130 @@
+<!-- VIDEO LAYOUT WITH PLAYER, PLAYLIST, AND CONTENT -->
+<div class="video-container">
+  <!-- Main Video Player -->
+  <div class="main-video">
+    <video id="mainVideo" controls>
+      <source src="video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Video Playlist -->
+  <div class="video-playlist">
+    <h3>Playlist</h3>
+    <ul>
+      <li onclick="playVideo('media/video1.mp4.mp4')">Video 1</li>
+      <li onclick="playVideo('media/video2.mp4.mp4')">Video 2</li>
+      <li onclick="playVideo('media/video3.mp4.mp4')">Video 3</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Content Below -->
+<div class="content-below">
+  <h2>Video Details</h2>
+  <p id="videoDetails">Provide details, comments,
+    or related information about the selected video here.</p>
+</div>
+
+<style>
+  /* General Layout */
+  .video-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+
+  .main-video {
+    flex: 2;
+    margin-right: 20px;
+  }
+
+  .main-video video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-playlist {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-playlist h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+  }
+
+  .video-playlist ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .video-playlist li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #007BFF;
+  }
+
+  .video-playlist li:hover {
+    background: #007BFF;
+    color: white;
+  }
+
+  .content-below {
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .content-below h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .content-below p {
+    font-size: 1rem;
+    color: #555;
+  }
+</style>
+
+
+
+<script>
+  // Video comments mapped to their file names
+  const videoDetails = {
+    'media/video1.mp4.mp4': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio eius provident distinctio minus, neque odio totam quidem officiis porro!.',
+    'media/video2.mp4.mp4': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed autem quia incidunt, harum quam optio! Enim officiis a voluptatibus libero nemo veniam ipsam quasi, accusamus tempora vel architecto asperiores voluptatem iste eum exercitationem beatae error deleniti illo labore cupiditate excepturi et ab reprehenderit iusto? Delectus laudantium dolores facilis cumque!.',
+    'media/video3.mp4.mp4': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed autem quia incidunt, harum quam optio! Enim officiis a voluptatibus libero nemo veniam ipsam quasi, accusamus tempora vel architecto asperiores voluptatem iste eum exercitationem beatae error deleniti illo labore cupiditate excepturi et ab reprehenderit iusto? Delectus laudantium dolores facilis cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sed autem quia incidunt, harum quam optio! Enim officiis a voluptatibus libero nemo veniam ipsam quasi, accusamus tempora vel architecto asperiores voluptatem iste eum exercitationem beatae error deleniti illo labore cupiditate excepturi et ab reprehenderit iusto? Delectus laudantium dolores facilis cumque!.'
+  };
+
+  // Function to play the video and update its details
+  function playVideo(videoSrc) {
+    const mainVideo = document.getElementById('mainVideo');
+    const videoDetailsElement = document.getElementById('videoDetails');
+
+    // Update the video source and play it
+    mainVideo.src = videoSrc;
+    mainVideo.play();
+
+    // Update the video details below
+    videoDetailsElement.textContent = videoDetails[videoSrc] || 'No details available for this video.';
+  }
+</script>
